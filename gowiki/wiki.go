@@ -41,7 +41,7 @@ import (
     			http.Redirect(w, r, "/edit/"+title, http.StatusFound)
     			return
     		}
-    		renderTemplate(w, "view", p)
+    		renderTemplate(w, "View Test", p)
     	}
 
     	func editHandler(w http.ResponseWriter, r *http.Request, title string) {
